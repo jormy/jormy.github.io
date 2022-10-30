@@ -196,3 +196,22 @@
   h1 {
     font-weight: 700;
   }
+
+.title {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
