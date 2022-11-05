@@ -287,7 +287,7 @@ div {
 }
 
 a {
-  color: rgba(123, 175, 236, 0.911);
+  color: rgba(158, 197, 240, 0.911);
   text-decoration: none;
 }
 
@@ -296,7 +296,11 @@ a:hover {
     -o-transition: all .1s ease-in;
     -webkit-transition: all .1s ease-in;
     transition: all .1s ease-in;
-  color: rgba(206, 229, 255, 0.911);
+  color: rgb(196, 222, 252);
+}
+
+a:active {
+  color: rgba(255, 255, 255, 0.911);
 }
 
 hr {
@@ -315,8 +319,10 @@ hr {
 
 ::-moz-selection {
   background-color: rgba(113, 166, 227, 0.911);
+  color: #151a25;
 }
 
 ::selection {
   background-color: rgba(113, 166, 227, 0.911);
+  color: #151a25;
 }
