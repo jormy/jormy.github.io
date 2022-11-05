@@ -324,5 +324,9 @@ hr {
 
 ::selection {
   background-color: rgba(113, 166, 227, 0.911);
-  color: #151a25;
+  color: #273350;
+}
+
+.sociallinks {
+  font-size: 15.5px;
 }
