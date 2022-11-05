@@ -312,3 +312,11 @@ hr {
 .youtube, .twitter, .discord {
   padding-right: 10px;
 }
+
+::-moz-selection {
+  background-color: rgba(113, 166, 227, 0.911);
+}
+
+::selection {
+  background-color: rgba(113, 166, 227, 0.911);
+}
