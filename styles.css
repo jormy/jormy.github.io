@@ -193,6 +193,14 @@
 
   body {
     font-family: 'Poppins', sans-serif;
+    color: rgba(233, 241, 250, 0.911);
+    background: #151a25;
+    background-image: url(./assets/bg.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-origin: border-box;
+    background-size: cover;
   }
 
   h1 {
@@ -207,8 +215,6 @@
 p {
     font-weight: 500;
 }
-
-/* center alignment*/
 
 html, body {
     height: 100%;
@@ -227,24 +233,24 @@ body {
     line-height: 1.8em;
 }
 
-/* code continues (applause please) */
-
 .credits {
-    font-weight: 400;
+    font-weight: 200;
     text-align: center;
-    font-size: 12px;
-    padding: 10px;
+    font-size: 0.9vh;
+    padding: 20px;
     -moz-border-radius: 35px;
     border-radius: 35px;
     bottom: 0;
     margin-left: auto;
     margin-right: auto;
     position: fixed;
-    line-height: 1.1em;
+    line-height: 1.4em;
+    color: rgba(255, 255, 255, 0.547);
 }
 
 .findmehere {
   font-size: 23px;
+  padding-top: 10px;
 }
 
 /* Navigation Bar 
@@ -278,4 +284,23 @@ div {
   flex-direction: column;
   justify-content: center;
   flex-grow: 1;
+}
+
+a {
+  color: rgba(123, 175, 236, 0.911);
+  text-decoration: none;
+}
+
+hr {
+  height: 0px;
+  border-color: rgba(123, 175, 236, 0.911);
+  background-color: rgba(123, 175, 236, 0.911);
+}
+
+.aboutmetext {
+  font-weight: 400;
+}
+
+.youtube, .twitter, .discord {
+  padding-right: 10px;
 }
