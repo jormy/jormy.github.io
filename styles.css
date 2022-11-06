@@ -331,3 +331,23 @@ hr {
 .youtube, .twitter {
   margin: 10px 10px 10px 0px;
 }
+
+#navbar {
+  padding: 20px 0;
+  background: #0f121a;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}
+
+#navbar a {
+  color: #bfd6f0;
+  border-bottom: solid 2px #bfd6f0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#navbar .navactive {
+  color: #7aaeeb;
+}
