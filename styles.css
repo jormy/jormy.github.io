@@ -324,9 +324,10 @@ hr {
 }
 
 .sociallinks {
-  font-size: 15.5px;
+  font-size: 16px;
+  white-space: nowrap;
 }
 
-.youtube, .twitter, .discord {
-  padding-right: 10px;
+.youtube, .twitter {
+  margin: 10px 10px 10px 0px;
 }
