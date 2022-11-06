@@ -313,10 +313,6 @@ hr {
   font-weight: 400;
 }
 
-.youtube, .twitter, .discord {
-  padding-right: 10px;
-}
-
 ::-moz-selection {
   background-color: rgba(113, 166, 227, 0.911);
   color: #151a25;
@@ -329,4 +325,8 @@ hr {
 
 .sociallinks {
   font-size: 15.5px;
+}
+
+.youtube, .twitter, .discord {
+  padding-right: 10px;
 }
