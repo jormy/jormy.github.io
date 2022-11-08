@@ -335,25 +335,28 @@ hr {
 }
 
 #navbar {
-  padding: 17px 0;
-  background: #0f121ac0;
-  width: 100vw;
+  padding: 17px 0 17px 0;
+  background: #8495da24;
+  width: 97vw;
+  border-radius: 20px;
   display: flex;
   justify-content: center;
   backdrop-filter: blur(7px);
-  
+  position: sticky;
+  margin: 24px 24px 24px 24px;
+  max-width: 1000px;
 }
 
 #navbar .item {
   color: #bfd6f0;
   border-bottom: dotted 1px #bfd6f0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   font-weight: 700;
-  padding: 10px 0;
+  padding: 2px 0 10px 0;
   margin: 0 30px;
   letter-spacing: 0.02em;
-  font-size: 16px;
+  font-size: 15px;
+  margin-bottom: 7px;
 }
 
 #navbar .navactive {
