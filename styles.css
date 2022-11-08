@@ -352,11 +352,12 @@ hr {
   border-bottom: dotted 1px #bfd6f0;
   padding-bottom: 12px;
   font-weight: 700;
-  padding: 2px 0 10px 0;
+  padding: 2px 0 5px 0;
   margin: 0 30px;
   letter-spacing: 0.02em;
   font-size: 15px;
   margin-bottom: 7px;
+  display: block;
 }
 
 #navbar .navactive {
