@@ -255,22 +255,6 @@ body {
   padding-top: 10px;
 }
 
-/* Navigation Bar 
-
-
-nav li a, li, .contactbutton {
-  font-size: 20px;
-  color: grey;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 10%;
-}
-
-*/ 
 div {
   display: block;
 }
@@ -341,10 +325,15 @@ hr {
   border-radius: 20px;
   display: flex;
   justify-content: center; 
-  backdrop-filter: blur(7px);
   position: sticky;
   margin: 24px 24px 24px 24px;
   max-width: 800px;
+}
+
+@supports (backdrop-filter: blur(7px)) {
+  #navbar {
+    backdrop-filter:  blur(7px);
+  }
 }
 
 #navbar .item {
@@ -387,13 +376,37 @@ border-bottom: solid 2px #bfd6f0;
   display: flex;
   flex-direction: row;
 }
+/* ----- nav bar -----*/
 
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   .togglebutton {
     display: flex;
   }
 
-.navdisappear {
+  .navdisappear {
     display: none;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navdisappear {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .itemdisappear {
+    text-align: center;
+    border-bottom: none;
+  }
+  
+  .itemdisappear.active {
+    display: flex;
+  }
+
+  #navbar {
+    align-items: center;
   }
 }
