@@ -238,16 +238,15 @@ body {
 .credits {
     font-weight: 200;
     text-align: center;
-    font-size: 0.9vh;
+    font-size: 10px;
     padding: 20px;
     -moz-border-radius: 35px;
     border-radius: 35px;
-    bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    position: fixed;
     line-height: 1.4em;
     color: rgba(255, 255, 255, 0.547);
+    bottom: 20px;
 }
 
 .findmehere {
@@ -339,9 +338,8 @@ hr {
 #navbar .item {
   color: #bfd6f0;
   border-bottom: dotted 1px #bfd6f0;
-  padding-bottom: 12px;
   font-weight: 700;
-  padding: 2px 0 5px 0;
+  padding: 2px 0 3px 0;
   margin: 0 30px 0 30px;
   letter-spacing: 0.02em;
   font-size: 1em;
