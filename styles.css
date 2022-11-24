@@ -188,14 +188,8 @@
 
 
   /* <-----------code starts here-----------> */
-
-  .pfp {
-    border-radius: 141010px;
-  }
-  
-  body {
+ .section1 {
     font-family: 'Poppins', sans-serif;
-    color: rgba(233, 241, 250, 0.911);
     background: #151a25;
     background-image: url(./assets/bg.svg);
     background-repeat: no-repeat;
@@ -203,212 +197,38 @@
     background-attachment: fixed;
     background-origin: border-box;
     background-size: cover;
-  }
-
-  h1 {
-    font-weight: 700;
-  }
-
-.title {
-    font-weight: 700;
-    font-size: 50px;
-}
-
-p {
-    font-weight: 500;
-}
-
-html, body {
-    height: 100%;
-}
-
-html {
-    display: table;
-    margin: auto;
-}
-
-body {
+    height: 100vh;
+    width: 100vw;
+    margin: none;
+    position: absolute;
+    color: rgba(233, 241, 250, 0.964);
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    line-height: 1.8em;
-}
-
-.credits {
-    font-weight: 200;
-    text-align: center;
-    font-size: 10px;
-    padding: 20px;
-    -moz-border-radius: 35px;
-    border-radius: 35px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.4em;
-    color: rgba(255, 255, 255, 0.547);
-    bottom: 20px;
-}
-
-.findmehere {
-  font-size: 23px;
-  padding-top: 10px;
-}
-
-div {
-  display: block;
-}
-
-.pagecontent {
-  max-width: 700px;
-}
-
-#wrapper {
-  padding: 40px 0;
-  margin: 0 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-grow: 1;
-}
-
-a {
-  color: rgba(158, 197, 240, 0.911);
-  text-decoration: none;
-}
-
-a:hover {
-  -moz-transition: all .1s ease-in;
-    -o-transition: all .1s ease-in;
-    -webkit-transition: all .1s ease-in;
-    transition: all .1s ease-in;
-  color: rgb(196, 222, 252);
-}
-
-a:active {
-  color: rgba(255, 255, 255, 0.911);
-}
-
-hr {
-  height: 0px;
-  border-color: rgba(123, 175, 236, 0.911);
-  background-color: rgba(123, 175, 236, 0.911);
-}
-
-.aboutmetext {
-  font-weight: 400;
-}
-
-::-moz-selection {
-  background-color: rgba(113, 166, 227, 0.911);
-  color: #151a25;
-}
-
-::selection {
-  background-color: rgba(113, 166, 227, 0.911);
-  color: #273350;
-}
-
-.sociallinks {
-  font-size: 16px;
-  white-space: nowrap;
-}
-
-.youtube, .twitter {
-  margin: 10px 10px 10px 0px;
-}
-
-#navbar {
-  padding: 17px 0 17px 0;
-  background: #8495da24;
-  width: 90vw;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center; 
-  position: fixed;
-  top: 20px;
-  max-width: 800px;
-}
-
-@supports (backdrop-filter: blur(7px)) {
-  #navbar {
-    backdrop-filter:  blur(7px);
-  }
-}
-
-#navbar .item {
-  color: #bfd6f0;
-  border-bottom: dotted 1px #bfd6f0;
-  font-weight: 700;
-  padding: 2px 0 3px 0;
-  margin: 0 30px 0 30px;
-  letter-spacing: 0.02em;
-  font-size: 1em;
-  margin-bottom: 7px;
-  display: block;
-}
-
-#navbar .navactive {
-  color: #7aaeeb;
-  border-bottom: solid 2px #7aaeeb;
-}
-
-#navbar .item:hover {
-  -moz-transition: all .1s ease-in;
-  -o-transition: all .1s ease-in;
-  -webkit-transition: all .1s ease-in;
-  transition: all .1s ease-in;
-color: rgb(234, 244, 255);
-border-bottom: solid 2px #bfd6f0;
-}
-
-.togglebutton {
-  position: absolute;
-  right: 25px;
-  font-size: 20px;
-  padding: 0;
-  top: 30px;
-  display: none;
-}
-
-.navdisappear {
-  display: flex;
-  flex-direction: row;
-}
-/* ----- nav bar -----*/
-
-@media (max-width: 650px) {
-  .togglebutton {
-    display: flex;
   }
 
-  .navdisappear {
-    display: none;
+  .imjorm {
+    font-size: 180px;
+    font-weight: 800;
+    text-shadow: 9px 8px #75a3e95e;
   }
 
-  #navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navdisappear {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .itemdisappear {
-    text-align: center;
-    border-bottom: none;
+  .typewriter h1 {
+    overflow: hidden; 
+    border-right: 15px solid rgb(69, 149, 247); 
+    white-space: nowrap; 
+    margin: 0 auto;
+    animation: 
+      typing 2s steps(30, end),
+      blink-caret .8s step-end infinite;
   }
   
-  .itemdisappear.active {
-    display: flex;
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
   }
-
-  #navbar {
-    align-items: center;
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(81, 133, 237) }
   }
-}
-
-.socialpage {
-  max-width: 1000px;
-}
