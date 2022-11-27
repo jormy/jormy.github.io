@@ -190,6 +190,7 @@
   /* <-----------code starts here-----------> */
   body {
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
   }
 
 #section1 {
@@ -206,6 +207,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 #section1 .jormpfp {
@@ -245,6 +247,28 @@
 .section1social a {
   color: rgb(126, 164, 234);
 }
+
+/* svg divider */
+.custom-shape-divider-bottom-1669532351 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1669532351 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 80px;
+}
+
+.custom-shape-divider-bottom-1669532351 .shape-fill {
+  fill: #FFFFFF;
+}
+/* end of svg divider */
 
 .section2 {
   width: 100vw;
