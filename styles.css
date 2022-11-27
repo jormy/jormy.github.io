@@ -188,47 +188,73 @@
 
 
   /* <-----------code starts here-----------> */
- .section1 {
+  body {
     font-family: 'Poppins', sans-serif;
-    background: #151a25;
-    background-image: url(./assets/bg.svg);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: fixed;
-    background-origin: border-box;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    margin: none;
-    position: absolute;
-    color: rgba(233, 241, 250, 0.964);
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
-  .imjorm {
-    font-size: 180px;
-    font-weight: 800;
-    text-shadow: 9px 8px #75a3e95e;
-  }
+#section1 {
+  background: #151a25;
+  background-image: url(./assets/bg.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-origin: border-box;
+  background-size: cover;
+  height: 85vh;
+  width: 100vw;
+  margin: none;
+  color: rgba(233, 241, 250, 0.964);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .typewriter h1 {
-    overflow: hidden; 
-    border-right: 15px solid rgb(69, 149, 247); 
-    white-space: nowrap; 
-    margin: 0 auto;
-    animation: 
-      typing 2s steps(30, end),
-      blink-caret .8s step-end infinite;
-  }
-  
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rgb(81, 133, 237) }
-  }
+#section1 .jormpfp {
+  border-radius: 141010px;
+  margin-bottom: 0px;
+  margin-right: 25px;
+}
+
+.imjorm {
+  font-size: 80px;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  color: #ecf3ffdb;
+  padding: none;
+}
+
+.subtitle {
+  margin-top: 0px;
+  font-size: 20px;
+  color: #cadeff;
+  font-weight: 400;
+}
+
+.section1content {
+  position: relative;
+}
+
+.section1social {
+  margin-top: 20px;
+  font-size: 22px;
+  display: flex;
+  gap: 25px;
+  width: inherit;
+  margin-left: 5px;
+}
+
+.section1social a {
+  color: rgb(126, 164, 234);
+}
+
+.section2 {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section2 h2 {
+  font-size: 80px;
+  font-weight: 700;
+  margin-top: 80px;
+}
