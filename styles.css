@@ -246,6 +246,7 @@
 
 .section1social a {
   color: rgb(126, 164, 234);
+  text-decoration: none;
 }
 
 /* svg divider */
