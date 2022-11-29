@@ -190,7 +190,6 @@
   /* <-----------code starts here-----------> */
   body {
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
   }
 
 #section1 {
@@ -271,15 +270,72 @@
 }
 /* end of svg divider */
 
-.section2 {
+#section2 {
   width: 100vw;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.section2 h2 {
+#section2 h2 {
   font-size: 80px;
   font-weight: 700;
   margin-top: 80px;
+}
+
+.projecttitle {
+  font-size: 30px;
+  color: #151a25c2;
+}
+
+#section2 .section2wrapper {
+  max-width: 700px;
+}
+
+#section2 .number {
+  font-family: "PT Mono";
+  font-size: 25px;
+  color: rgb(81, 126, 211);
+  padding-right: 10px;
+}
+
+.projectcontent {
+  max-width: 670px;
+  font-weight: 400;
+  color: #151a25c7;
+  font-size: 17px;
+  padding-left: 65px;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+#section2 img {
+  margin-left: 65px;
+  margin-top: 25px;
+  border-radius: 12px;
+  filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.575));
+}
+
+.project2 {
+  margin-top: 60px;
+}
+
+.beta {
+  background-color: rgb(81, 126, 211);
+  color: #fff;
+  padding: 1px 12px;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+abbr {
+  border-bottom: none !important;
+  cursor: inherit !important;
+  text-decoration: none !important;
+}
+
+.project2container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
