@@ -37,13 +37,29 @@
 
   <body>
     <section id="section1">
-      <img
-        class="jormpfp"
-        src="./assets/pfpshadowbigbackground.png"
-        alt="a wonderful picture of jorm and his handsome pixelated face"
-        height="140px"
-        width="140px"
-      />
+
+      <div class="pfp-wrapper">
+
+        <!--christmas hat-->
+        <img 
+          class="santa-hat" 
+          src="./christmas/christmashat.png" 
+          alt="device for impersonating santa" 
+          width="148px"
+          height="90px"
+        />
+        <!--/christmas hat-->
+
+        <img
+          class="jormpfp"
+          src="./assets/pfpshadowbigbackground.png"
+          alt="a wonderful picture of jorm and his handsome pixelated face"
+          height="150px"
+          width="150px"
+        />
+
+      </div>
+
       <div class="section1content">
         <h1 class="imjorm">jorm<span class="discord-tag">#3030</span></h1>
         <p class="subtitle">I code random stuff sometimes</p>
@@ -145,6 +161,7 @@
     <script>
       snowStorm.snowColor = 'rgba(255, 255, 255, 0.77)';
       snowStorm.targetElement = 'section1';
+      snowStorm.animationInterval = 45;
     </script>
     <!--/snowstorm.js-->
   </body>

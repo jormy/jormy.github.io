@@ -192,6 +192,26 @@
     font-family: 'Poppins', sans-serif;
   }
 
+/*christmas css */
+
+.pfp-wrapper {
+  position: relative;
+}
+
+.jormpfp {
+  position: relative;
+}
+
+.santa-hat {
+  position: absolute;
+  z-index: 2;
+  top: -20px;
+  left: -17px;
+  transform: rotate(-12deg);
+}
+
+/* end of christmas css */
+
 #section1 {
   background: #151a25;
   background-image: url(./assets/bg.svg);
