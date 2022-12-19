@@ -1,3 +1,4 @@
+<h1 style="font-family: monospace;">website</h1>
 website to practice my almost non-existent coding skills in CSS, HTML and a minuscule amount of javascript that i <strike>stole</strike> borrowed from somebody else.
 <br />
 (jk the javascript is just for the snow)
