@@ -237,7 +237,7 @@
 }
 
 .imjorm {
-  font-size: 80px;
+  font-size: 5.313rem;
   font-weight: 700;
   margin: 0 0 12px 0;
   color: #ecf3ffdb;
@@ -246,14 +246,14 @@
 
 .discord-tag {
   color: #687087;
-  font-size: 55px;
+  font-size: 3.5rem;
   padding-left: 5px;
   font-weight: 600;
 }
 
 .subtitle {
   margin-top: 0px;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #cadeff;
   font-weight: 400;
 }
@@ -294,13 +294,22 @@
 }
 
 .custom-shape-divider-bottom-1669532351 .shape-fill {
-  fill: rgb(30, 30, 30);
+  fill: #0b0c10;
 }
 /* end of svg divider */
+#wrapper {
+  background-image: linear-gradient(#0b0c10, #171b22);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
-#section2,
-#section3 {
-  background-color: rgb(30, 30, 30);
+.hr {
+  height: 1px;
+  width: 85vw;
+  max-width: 800px;
+  background-color: #323842;
+  margin: 20px 0 0 0;
 }
 
 .section {
@@ -316,10 +325,9 @@
 }
 
 .section h2 {
-  font-size: 70px;
+  font-size: 4.38rem;
   text-align: left;
   width: inherit;
-  font-size: 80px;
   color: rgba(255, 255, 255, 0.841);
   margin: 40px 0 25px 0;
 }
@@ -329,5 +337,46 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.658);
   line-height: 1.8em;
-  font-size: 17px
+  font-size: 1.05rem
+}
+
+/*accordion styles*/
+.accordion-card {
+  background-color: rgba(255, 255, 255, 0.027);
+  border-radius: 10px;
+  width: 30vw;
+  max-width: 450px;
+  min-width: 350px;
+  height: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.126);
+}
+
+.accordion-header {
+  color: rgba(255, 255, 255, 0.841);
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion-header::after {
+  content: "\02C3";
+  font-size: 1.5rem;
+  position: absolute;
+  right: 1rem;
+  font-weight: 200;
+}
+
+.accordion-header.active::after { 
+  transform: rotate(90deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.accordion-body {
+  color: rgba(255, 255, 255, 0.658);
+  font-weight: 300;
+  font-size: 1.1rem;
 }
