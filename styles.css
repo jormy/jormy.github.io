@@ -385,8 +385,6 @@
   color: rgba(255, 255, 255, 0.658);
   font-weight: 300;
   font-size: 1rem;
-  /*padding-top: 1rem;*/
-  /*padding-bottom: 1rem;*/
   padding-left: 1rem;
   padding-right: 1.3rem;
   line-height: 1.5em;
@@ -405,8 +403,12 @@
   right: 1rem;
 }
 
+.accordion-card.active .accordion-header {
+  border-bottom: 1px solid rgba(153, 196, 239, 0.121);
+}
+
 .accordion-card.active .accordion-content {
-  height: 150px;
+  height: fit-content;
   padding: 1rem 1rem 1rem 1.3rem;
 }
 
