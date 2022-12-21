@@ -31,8 +31,6 @@
     />
 
     <link rel="icon" type="image/x-icon" href="assets/pfpshadowbig.png" />
-
-    <script src="script.js" defer></script>
   </head>
 
   <body>
@@ -91,8 +89,11 @@
     <div id="wrapper">
       <section id="about-moi" class="section">
         <div class="section-wrapper">
-          <h2>About moi✌️</h2>
-          <p>I'm Jorm.</p>
+          <h2>hewo✌️</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            repellat.
+          </p>
         </div>
       </section>
 
@@ -101,10 +102,7 @@
       <section id="projects" class="section">
         <div class="section-wrapper">
           <h2>Projects</h2>
-          <p>
-            Basically a <strike>repetiore</strike> repertoire of random stuff
-            that I created.
-          </p>
+          <p>rando stuff.</p>
 
           <!--good luck reading this portion
           <div class="accordion-card">
@@ -114,9 +112,86 @@
             </div>
           </div>
           end of accordion-->
+
+          <div class="accordion-wrapper">
+            <div class="accordion-card">
+              <div class="accordion-header">Card 1</div>
+              <div class="accordion-content">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
+                nesciunt vero sunt. Ad eveniet maiores quidem quis id animi
+              </div>
+            </div>
+
+            <div class="accordion-card">
+              <div class="accordion-header">Card 2</div>
+              <div class="accordion-content">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
+                nesciunt vero sunt. Ad eveniet maiores quidem quis id animi
+                dolor sequi perspiciatis blanditiis ut provident vel unde
+                aliquam.
+              </div>
+            </div>
+
+            <div class="accordion-card">
+              <div class="accordion-header">Card 3</div>
+              <div class="accordion-content">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
+                nesciunt vero sunt. Ad eveniet maiores quidem quis id animi
+                dolor sequi perspiciatis blanditiis ut provident vel unde
+                aliquam.
+              </div>
+            </div>
+
+            <div class="accordion-card">
+              <div class="accordion-header">Card 4</div>
+              <div class="accordion-content">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
+                nesciunt vero sunt. Ad eveniet maiores quidem quis id animi
+                dolor sequi perspiciatis blanditiis ut provident vel unde
+                aliquam.
+              </div>
+            </div>
+
+            <div class="accordion-card">
+              <div class="accordion-header">Card 5</div>
+              <div class="accordion-content">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
+                nesciunt vero sunt. Ad eveniet maiores quidem quis id animi
+                dolor sequi perspiciatis blanditiis ut provident vel unde
+                aliquam.
+              </div>
+            </div>
+
+            <div class="accordion-card">
+              <div class="accordion-header">Card 6</div>
+              <div class="accordion-content">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
+                nesciunt vero sunt. Ad eveniet maiores quidem quis id animi
+                dolor sequi perspiciatis blanditiis ut provident vel unde
+                aliquam.
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion-card");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+          this.classList.toggle("active");
+        });
+      }
+    </script>
+
+    <!------------------------------>
+
+    <script src="script.js"></script>
 
     <!--snowstorm.js-->
     <script src="christmas/snowstorm.js"></script>
