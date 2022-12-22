@@ -104,71 +104,70 @@
           <h2>Projects</h2>
           <p>rando stuff.</p>
 
-          <!--good luck reading this portion
-          <div class="accordion-card">
-            <div class="accordion-header">website</div>
-            <div class="accordion-body">
-              my personal website to show off my skills which do not exist
-            </div>
-          </div>
-          end of accordion-->
-
           <div class="accordion-wrapper">
             <div class="accordion-card">
               <div class="accordion-header">Card 1</div>
-              <div class="accordion-content">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
-                nesciunt vero sunt. Ad eveniet maiores quidem quis id animi
+              <div class="accordion-body">
+                <div class="accordion-body-content">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
+                  aliquid sint voluptatum deserunt alias iusto excepturi
+                  pariatur odio
+                </div>
               </div>
             </div>
 
             <div class="accordion-card">
               <div class="accordion-header">Card 2</div>
-              <div class="accordion-content">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
-                nesciunt vero sunt. Ad eveniet maiores quidem quis id animi
-                dolor sequi perspiciatis blanditiis ut provident vel unde
-                aliquam.
+              <div class="accordion-body">
+                <div class="accordion-body-content">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Eaque nesciunt vero sunt. Ad eveniet maiores quidem quis id
+                  animi
+                </div>
               </div>
             </div>
 
             <div class="accordion-card">
               <div class="accordion-header">Card 3</div>
-              <div class="accordion-content">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
-                nesciunt vero sunt. Ad eveniet maiores quidem quis id animi
-                dolor sequi perspiciatis blanditiis ut provident vel unde
-                aliquam.
+              <div class="accordion-body">
+                <div class="accordion-body-content">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Eaque nesciunt vero sunt. Ad eveniet maiores quidem quis id
+                  animi
+                </div>
               </div>
             </div>
 
             <div class="accordion-card">
               <div class="accordion-header">Card 4</div>
-              <div class="accordion-content">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
-                nesciunt vero sunt. Ad eveniet maiores quidem quis id animi
-                dolor sequi perspiciatis blanditiis ut provident vel unde
-                aliquam.
+              <div class="accordion-body">
+                <div class="accordion-body-content">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Eaque nesciunt vero sunt. Ad eveniet maiores quidem quis id
+                  animi
+                </div>
               </div>
             </div>
 
             <div class="accordion-card">
               <div class="accordion-header">Card 5</div>
-              <div class="accordion-content">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
-                nesciunt vero sunt. Ad eveniet maiores quidem quis id animi
-                dolor sequi perspiciatis blanditiis ut provident vel unde
-                aliquam.
+              <div class="accordion-body">
+                <div class="accordion-body-content">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Eaque nesciunt vero sunt. Ad eveniet maiores quidem quis id
+                  animi
+                </div>
               </div>
             </div>
 
             <div class="accordion-card">
               <div class="accordion-header">Card 6</div>
-              <div class="accordion-content">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
-                nesciunt vero sunt. Ad eveniet maiores quidem quis id animi
-                dolor sequi perspiciatis blanditiis ut provident vel unde
-                aliquam.
+              <div class="accordion-body">
+                <div class="accordion-body-content">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Eaque nesciunt vero sunt. Ad eveniet maiores quidem quis id
+                  animi
+                </div>
               </div>
             </div>
           </div>
@@ -177,16 +176,21 @@
     </div>
 
     <script>
-      var acc = document.getElementsByClassName("accordion-card");
-      var i;
+      const accordionItemHeaders =
+        document.querySelectorAll(".accordion-header");
 
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-          /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-          this.classList.toggle("active");
+      accordionItemHeaders.forEach((accordionItemHeader) => {
+        accordionItemHeader.addEventListener("click", (event) => {
+          accordionItemHeader.classList.toggle("active");
+          const accordionItemBody = accordionItemHeader.nextElementSibling;
+          if (accordionItemHeader.classList.contains("active")) {
+            accordionItemBody.style.maxHeight =
+              accordionItemBody.scrollHeight + "px";
+          } else {
+            accordionItemBody.style.maxHeight = 0;
+          }
         });
-      }
+      });
     </script>
 
     <!------------------------------>
