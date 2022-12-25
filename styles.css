@@ -229,7 +229,7 @@
   position: relative;
 }
 
-#section1 .jormpfp {
+#section1 .avatar {
   border-radius: 141010px;
   margin-bottom: 0px;
   margin-right: 25px;
@@ -315,11 +315,11 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .section-wrapper {
   width: 90%;
-  margin-left: 20px;
   max-width: 800px;
 }
 
@@ -398,7 +398,22 @@
   transform: rotate(90deg);
   transition: ease-in 0.3s;
 }
-/*placeholder*/
-#projects {
-  margin-bottom: 50vh;
+
+/* /accordion css */
+footer {
+  margin-top: 150px;
+}
+
+footer .footer-wrapper p {
+  color: rgba(240, 248, 255, 0.277);
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.4em;
+  font-size: 0.75rem;
+  padding-bottom: 15px;
+}
+
+footer .footer-wrapper p a {
+  color: rgba(240, 248, 255, 0.471);
+  text-decoration: none;
 }
