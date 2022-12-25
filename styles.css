@@ -189,8 +189,22 @@
 
   /* <-----------code starts here-----------> */
   body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'GeneralSans-Variable', sans-serif;
   }
+
+/* cursor trailer */
+#cursor-trailer {
+  position:absolute;
+  transform:translate(-50%,-50%);
+  height:30px;
+  width:30px;
+  border-radius:50%;
+  border:1px solid rgba(255, 255, 255, 0.653);
+  z-index: 10000;
+  pointer-events: none;
+  background: none;
+}
+/* /cursor trailer */
 
 /*christmas css */
 
