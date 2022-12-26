@@ -29,9 +29,7 @@
   </head>
 
   <body>
-    <!--cursor trailer-->
-    <div id="cursor-trailer"></div>
-    <!--/cursor trailer-->
+    <div class="cursor"></div>
 
     <section id="section1">
       <div class="pfp-wrapper">
@@ -196,6 +194,7 @@
       accordionItemHeaders.forEach((accordionItemHeader) => {
         accordionItemHeader.addEventListener("click", (event) => {
           accordionItemHeader.classList.toggle("active");
+          //animation
           const accordionItemBody = accordionItemHeader.nextElementSibling;
           if (accordionItemHeader.classList.contains("active")) {
             accordionItemBody.style.maxHeight =
@@ -207,12 +206,28 @@
       });
 
       //script for mouse trailer
-      let circle = document.getElementById("cursor-trailer");
-      const onMouseMove = (e) => {
-        circle.style.left = e.pageX + "px";
-        circle.style.top = e.pageY + "px";
-      };
-      document.addEventListener("mousemove", onMouseMove);
+      const cursor = document.querySelector(".cursor");
+
+      document.addEventListener("mousemove", (e) => {
+        cursor.setAttribute(
+          "style",
+          "top: " + (e.pageY - scrollY) + "px; left: " + e.pageX + "px"
+        );
+
+        cursor.classList.add("cursor-active");
+
+        setTimeout(() => {
+          cursor.classList.remove("cursor-active");
+        }, 1000);
+      });
+
+      document.addEventListener("click", () => {
+        cursor.classList.add("cursor-click");
+
+        setTimeout(() => {
+          cursor.classList.remove("cursor-click");
+        }, 1000);
+      });
     </script>
 
     <!------------------------------>
@@ -220,7 +235,7 @@
     <script src="script.js"></script>
 
     <!--snowstorm.js-->
-    <script src="christmas/snowstorm.js"></script>
+    <!--<script src="christmas/snowstorm.js"></script>-->
     <script>
       snowStorm.snowColor = "rgba(255, 255, 255, 0.77)";
       snowStorm.animationInterval = 45;
