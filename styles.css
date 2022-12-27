@@ -398,7 +398,7 @@
   color: rgba(255, 255, 255, 0.841);
   font-weight: 600;
   font-size: 1.25rem;
-  padding: 1rem 1.5rem 0.8rem 1.3rem;
+  padding: 1rem 1.5rem 1rem 1.3rem;
   display: flex;
   align-items: center;
   position: relative;
@@ -422,18 +422,17 @@
   letter-spacing: 0.02em;
 }
 
-.accordion-header::after {
-  content: '\003E';
-  font-size: 2rem;
-  font-weight: 400;
+.accordion-header svg {
+  height: 1.7rem;
+  widows: 1.7rem;
   position: absolute;
-  right: 1rem;
-  transition: ease-in 0.3s;
+  right: 10px;
+  transition: ease-in 0.2s;
 }
 
-.accordion-header.active::after {
+.accordion-header.active svg {
   transform: rotate(90deg);
-  transition: ease-in 0.3s;
+  transition: ease-in 0.2s;
 }
 
 /* /accordion css */
