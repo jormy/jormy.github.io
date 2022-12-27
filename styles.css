@@ -381,6 +381,7 @@
   gap: 20px;
   position: relative;
   margin-top: 25px;
+  align-items: flex-start;
 }
 
 .accordion-card {
