@@ -367,11 +367,11 @@
 }
 
 .section p {
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 1.1rem;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.658);
   line-height: 1.8em;
-  font-size: 1.05rem
 }
 
 /*accordion styles*/
@@ -390,8 +390,14 @@
   width: 30vw;
   max-width: 385px;
   min-width: 350px;
-  border: 1px solid rgba(153, 196, 239, 0.121);
+  border: 1px solid rgba(153, 196, 239, 0.153);
   position: relative;
+  transition: ease-in 0.1s;
+}
+
+.accordion-card:hover {
+  background-color: rgba(182, 210, 253, 0.104);
+  transition: ease-in 0.1s;
 }
 
 .accordion-header {
@@ -414,7 +420,7 @@
 .accordion-body-content {
   color: rgba(255, 255, 255, 0.658);
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   padding: 0.8rem 1rem 0.8rem 1.3rem;
   line-height: 1.5rem;
   border-top: 1px solid;
