@@ -1,0 +1,20 @@
+/*!
+ * Windows 11 Fluent emoji
+ * <NOT MADE BY ME>
+ */
+ .emoji {
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:1em 1em;
+    display:inline-block;
+    height:1em;
+    margin:0 .05em 0 .1em;
+    vertical-align:-0.1em;
+    width:1em
+}
+.emoji.victory-hand {
+    background-image: url(../emojis/emoji/victory_hand_color_default.svg);
+}
+.emoji.thought-balloon {
+    background-image: url(../emojis/emoji/thought_balloon_color.svg);
+}

@@ -414,7 +414,8 @@
 .accordion-body {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 250ms;
+  transition-timing-function: cubic-bezier(.52,.21,.16,.99);
 }
 
 .accordion-body-content {
@@ -433,12 +434,12 @@
   widows: 1.7rem;
   position: absolute;
   right: 10px;
-  transition: ease-in 0.2s;
+  transition: ease-in 200ms;
 }
 
 .accordion-header.active svg {
   transform: rotate(90deg);
-  transition: ease-in 0.2s;
+  transition: ease-in 200ms;
 }
 
 /* /accordion css */
