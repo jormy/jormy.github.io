@@ -11,6 +11,7 @@
     margin:0 .05em 0 .1em;
     vertical-align:-0.1em;
     width:1em
+    -webkit-transform: translate3d(0,0,0)
 }
 .emoji.victory-hand {
     background-image: url(../emojis/emoji/victory_hand_color_default.svg);
