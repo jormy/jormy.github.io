@@ -442,7 +442,23 @@
   transition: ease-in 200ms;
 }
 
+.accordion-button {
+  background-color: #9297a028;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  margin-top: 10px;
+  font-size: 1em;
+  height: 2.3em;
+  width: 2.3em;
+}
+
+.accordion-button a {
+  color: rgba(255, 255, 255, 0.658);
+  text-decoration: none;
+}
 /* /accordion css */
+
 footer {
   margin-top: 150px;
 }
