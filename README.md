@@ -1,3 +1,4 @@
-<h1>website</h1>
-website to practice my almost non-existent coding skills in CSSand HTML.
-https://jorm.xyz
+# website
+smth i made to show how bad i am at web dev
+
+also this aint a template i spent way longer than i should have on this
